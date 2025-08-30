@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro3.css">
+    </head>
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <a href="#CSS_Introduction" class="nav-link">CSS Introduction</a><br>
+        <a href="#Selectors" class="nav-link">Selectors</a><br>
+        <a href="#Box_Model" class="nav-link">Box Model</a><br>
+        <a href="#Flexbox" class="nav-link">Flexbox</a><br>
+        <a href="#Grid" class="nav-link">Grid</a><br>
+        <a href="#Colors_&_Units" class="nav-link">Colors & Units</a><br>
+        <a href="#Media_Queries" class="nav-link">Media Queries</a><br>
+        <a href="#Conclusion" class="nav-link">Conclusion</a><br>
+    </nav>
+    <main id="main-doc">
+        <h1>CSS Documentation</h1>
+        <section class="main-section" id="CSS_Introduction">
+            <header>CSS Introduction</header>
+            <p><ol><li>CSS stands for Cascading Style Sheets. It is used to style and design web pages.</li></p>
+            <p><li>With CSS, you can control colors, fonts, layouts, spacing, and responsiveness of a website.</li></p></section>
+            <h3>  List - Types of CSS:</h3>
+                <ol><li>Inline CSS – Styles written inside the HTML element’s <code>style</code> attribute.</li>
+                <li>Internal CSS – Styles written inside the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.</li>
+                <li>External CSS – Styles stored in a separate .css file and linked using the <code>&lt;link&gt;</code> tag.</li></ol>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <p>Selectors are patterns used to target HTML elements.</p>
+            <ul>
+                <li><code>*</code>→ Universal selector</li>
+                <li><code>p</code>→ Type selector</li>
+                <li><code>.class</code>→ Class selector</li>
+                <li><code>#id</code>→ ID selector</li>
+                <li><code>div p</code>→ Descendant selector</li>
+                <li><code>div > p</code>→ Child selector</li>
+                <li><code>[attr=value]</code>→ Attribute selector</li>
+                <li><code>:hover</code>→ Pseudo-class</li>
+                <li><code>::before</code>→ Pseudo-element</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Box_Model">
+            <header>Box Model</header>
+            <p>Every element in CSS follows the box model.It consists of:</p>
+            <ol>
+                <li>Content → text, images, etc.</li>
+                <li>Padding → space between content and border.</li>
+                <li>Border → edge of the element.</li>
+                <li>Padding → space between content and border.</li>
+            </ol>
+            <code>
+                div { <br>
+  margin: 20px; <br>
+  padding: 10px; <br>
+  border: 2px solid black; <br>
+}
+            </code>
+        </section>
+        <section class="main-section" id="Flexbox">
+            <header>Flexbox</header>
+            <P>Flexbox is a layout model that helps align items efficiently.</P>
+            <code>
+                .container { <br>
+  display: flex; <br>
+  justify-content: center; <br>
+  align-items: center; <br>
+}
+            </code>
+            <ul>
+                <li><code>justify-content</code>→ horizontal alignment</li>
+                <li><code>align-items</code>→ vertical alignment</li>
+                <li><code>flex-direction</code>→ row / column</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Grid">
+            <header>Grid</header>
+            <P>CSS Grid allows two-dimensional layouts.</P>
+            <code>
+                .container { <br>
+  display: grid; <br>
+  grid-template-columns: 1fr 1fr 1fr; <br>
+  gap: 10px; <br>
+}
+            </code>
+        </section>
+        <section class="main-section" id="Colors_&_Units">
+            <header>Colors & Units</header>
+            <p>You can set text color, background color, and images.</p>
+            <code>h1 {<br>
+  color: blue;<br>
+  background-color: yellow;<br>
+            } <br>
+body { <br>
+  background-image: url("bg.jpg"); <br>
+}
+</code>
+        </section>
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <ul><li><p>Responsive design makes websites adapt to different screens.</p></li></ul>
+            <code>@media (max-width: 600px) {<br>
+   body {<br>
+    background-color: lightgray;<br>
+   } <br>
+}
+</code>
+        </section>
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <ul><li><p>CSS is essential for modern web development. By mastering selectors, properties,
+                 layouts (Flexbox & Grid),
+                 and responsive design, you can create beautiful
+                  and user-friendly web pages.</p></li></ul>
+        </section>
+    </main>
+</body>
+</html>
